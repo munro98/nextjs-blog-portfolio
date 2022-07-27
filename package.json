@@ -1,19 +1,29 @@
 {
-  "name": "next-netlify-starter",
+  "name": "nextjs-blog-portfolio",
   "version": "0.5.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next export"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "cypress": "^10.0.3",
-    "next": "^12.1.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "framer-motion": "^6.5.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^2.1.2",
+    "next": "^12.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.8.0"
+    "@netlify/plugin-nextjs": "^4.13.1",
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.2",
+    "prettier": "^2.7.1"
   }
 }

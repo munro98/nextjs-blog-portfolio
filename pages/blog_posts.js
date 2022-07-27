@@ -8,7 +8,7 @@ import Footer from '@components/Footer'
 import Post from '../components/Post'
 import { sortByDate } from '../utils'
 
-export default function Home({ posts }) {
+export default function BlogPosts({ posts }) {
   return (
     <div className="container">
       <Head>
