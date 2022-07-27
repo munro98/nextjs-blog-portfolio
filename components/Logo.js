@@ -12,13 +12,9 @@ display: inline-flex;
 align-itmes: center;
 height: 30px;
 line-height: 20px;
-
-&:hover img {
-    transoform: rotate(20deg);
-}
 `
 const Logo = () => {
-    const footPrintImg = `/images/favicon${useColorModeValue('', '-dark')}.png`
+    const footPrintImg = `/images/favicon${useColorModeValue('', '')}.png`
     return (
         <Link href="/" scroll={false}>
           <a>
@@ -26,10 +22,8 @@ const Logo = () => {
               <Image src={footPrintImg} width={20} height={20} alt="logo" />
               <Text
                 color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                fontFamily='M PLUS Rounded 1c", sans-serif'
-                fontWeight="bold"
                 ml={3}
-              >
+            >
                 Nigel Munro
               </Text>
             </LogoBox>

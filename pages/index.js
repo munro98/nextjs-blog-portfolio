@@ -1,35 +1,60 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import NextLink from 'next/link'
+import {Container, Box, Heading, Image, useColorModeValue} from '@chakra-ui/react'
+
+import { sortByDate } from '../utils'
 
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Post from '../components/Post'
-import { sortByDate } from '../utils'
+import Section from '../components/Section'
+import Paragraph from '../components/Paragraph'
+
 
 export default function Home({ posts }) {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Container>
+        <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.200')} p={4} mb={6} align="center">
+            I'm a full stack developer
+        </Box>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Testing changes <code>pages/index.js</code>
-        </p>
-        <div className='posts'>
-        {posts.map((post, index) => (
-          <Post key={index} post={post} />
-        ))}
-        </div>
-      </main>
+        <Box display={{md: 'flex'}}></Box>
+        <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+                Nigel Munro
+            </Heading>
+            <p> (Coder / 3D Artist / FPV Quadcopter Pilot) </p>
+        <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} 
+        align="center"
+        >
+            <Image borderColor="whiteAlpha.800" 
+            borderWidth={2} 
+            borderStyle="solid" 
+            maxWidth="100" 
+            display="inline-block"
+            borderTopLeftRadius="10"
+            borderTopRightRadius="10"
+            borderBottomRightRadius="10"
+            borderBottomLeftRadius="10"
+            src="/images/favicon.png"
+            alt="profile picture"
+            />
+        </Box>
+        <Section delay={0.1}>
+            <Heading as="h3" variant="section-title">
+                Work
+            </Heading>
+            <Paragraph>
+                This is some paragraph text
+                <NextLink href="/works/coolproject"> Cool Project</NextLink>
+            </Paragraph>
+        </Section>
 
-      <Footer />
-    </div>
+        </Box>
+    </Container>
   )
 }
 

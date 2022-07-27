@@ -4,6 +4,8 @@ import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
 
+import {Container, Box, Heading, Image, useColorModeValue} from '@chakra-ui/react'
+
 export default function PostPage({
   frontmatter: { title, date, cover_image },
   slug,
@@ -15,7 +17,7 @@ export default function PostPage({
         <a className='btn btn-back'>Go Back</a>
       </Link>
       <div className='card card-page'>
-        <h1 className='post-title'>{title}</h1>
+        <h2 className='post-title'>{title}</h2>
         <div className='post-date'>Posted on {date}</div>
         <img src={cover_image} alt='' />
         <div className='post-body'>

@@ -20,13 +20,12 @@ import ToggleDarkMode from './ToggleDarkMode'
 
 const LinkItem = ({href, path, children}) => {
     const active = path === href
-    const inacvtiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-    return (<NextLink href={href}>
+    return (
+    <NextLink href={href}>
         <Link p={2} 
-        bg={active ? 'glassTeal' : undefined}
-        color={active ? '#202023' : inacvtiveColor}
+        bg={active ? useColorModeValue('#3182ce', '#FBD38D') : undefined}
+        color={active ? '#202023' : useColorModeValue('gray200', 'whiteAlpha.900')}
         >{children}</Link>
-
     </NextLink>)
 }
 
@@ -62,10 +61,10 @@ const Navbar = props => {
             flexGrow={1}
             mt={{base: 4, nmd: 0}}
             >
+        <LinkItem href="/" path={path}>Home</LinkItem>
         <LinkItem href="/works" path={path}>Works</LinkItem>
         <LinkItem href="/blog_posts" path={path}>Blog</LinkItem>
         </Stack>
-        
         
         <Box flex={1} align="right">
             <ToggleDarkMode></ToggleDarkMode>
@@ -78,13 +77,10 @@ const Navbar = props => {
                     </MenuButton>
                     <MenuList>
                         <NextLink href="/" passHref>
-                            <MenuItem as={Link}>About</MenuItem>
+                            <MenuItem as={Link}>Home</MenuItem>
                         </NextLink>
                         <NextLink href="/blog_posts" passHref>
                             <MenuItem as={Link}>Blog</MenuItem>
-                        </NextLink>
-                        <NextLink href="/blog_posts" passHref>
-                            <MenuItem as={Link}>View source code</MenuItem>
                         </NextLink>
                     </MenuList>
                 </Menu>

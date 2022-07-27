@@ -1,6 +1,7 @@
 import { Box, Container } from '@chakra-ui/react'
 import Head from 'next/head'
 import Navbar from '../Navbar'
+import Footer from '@components/Footer'
 
 const Main = ({ children, router}) => {
     return (
@@ -15,7 +16,14 @@ const Main = ({ children, router}) => {
         <Container maxW="container.md" pt={14}>
             {children}
         </Container>
+        <Footer />
         </Box>
     )
 }
 export default Main;
+
+/*
+<NextLink href="https://github.com/munro98/nextjs-blog-portfolio" passHref>
+                            <MenuItem as={Link}>View source code</MenuItem>
+                        </NextLink>
+*/

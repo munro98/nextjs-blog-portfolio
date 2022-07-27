@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
+import {Container, Box, Heading, Image, useColorModeValue} from '@chakra-ui/react'
+
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
@@ -17,18 +19,15 @@ export default function BlogPosts({ posts }) {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Testing changes <code>pages/index.js</code>
-        </p>
+        <Heading as="h2" variant="page-title">
+            Recent Posts
+        </Heading>
         <div className='posts'>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }
