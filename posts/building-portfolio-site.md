@@ -1,54 +1,10 @@
 ---
-title: 'Building a portfilio site with nextjs'
-date: 'March 4, 2021'
-excerpt: 'We will look at 10 simple tips and tricks to increase the speed of your code when writing JS'
-cover_image: '/images/posts/img1.jpg'
+title: "Building a portfilio site with nextjs"
+date: "July 29, 2022"
+excerpt: "I rebuilt my portfolio website with NextJS"
+cover_image: "/images/posts/img1.jpg"
 ---
 
-Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit
-nigro cornu genus duris linguae. Super hic deus ego adveniens nullumque Venerem
-equis aurem aliisque celare densis dextramque similis **post**: mihi rexerat;
-bis.
+My previous portfolio website was built using Jekyll since Github supported building and hosting the site and had a selection of themes you could pick from. You could also write most of the content of the website in markdown a simplistic mark up language which is much better for writing down documents compared to raw html which jekyll would compile to later.
 
-1. Scinditur annos
-2. Talia verba
-3. Habet delata villis domui
-4. Geminum viscere deum et utque
-
-## Magnorum nulla avertit pedem neque monimenta terram
-
-Quo numquam, nunc [concussaque](http://mox-cunctos.net/), hora effugit mihi,
-pectore. Hinc fausto, circumspicit cadas; virilibus rapui, timidum rorat cuique
-animorum ac! Quem sit. Venit qui, rex sibi tota, peto _fortis ira suis_ dolusque
-simulatque [incipit crudelesque
-pavens](http://www.corpora.com/terrae-oscula.html) spatiosa conlegit oscula
-equam.
-
-## Mensis idem
-
-Caelestia Ganymedes gentis. Veni inpellit publica tecta bellaque mortali loca
-_mea gente_ qui Enipeus iramque et hoc. _Altera Rex vetitum_; hoc magis dolores
-precor nec. Ubi verba, et aras regia, cognoscere vites tempusque expers, heros?
-
-## Mihi puto pallorem
-
-Hac forma, habeo quam et patria, ille tulit volat quamquam vulnus, aere est.
-Ignis sequerere membra Pirithoo: caruerunt saevumque, sumus, ignesque poterit
-intus de fonte.
-
-## Quondam montibus tua spes consilioque nata consilioque
-
-Abigitque limite. Ipsa levis extulit munera, litora, ira pavet in morte, **te
-in** quas [vix](http://auxiliumquefando.net/vocibus-cum). Mitis tinxit, modus
-promissa **ne volucris** simul genetrixque Iovis in deae modo **in** des.
-_Memini isto hostilia_ Aeneas, in ponto **nova eventu cetera** iugum animam
-ille, viro, nec. Loquendi aves insisto saecula premente nec, at ego poscit ubi
-sub!
-
-- Tristis natorum ora talia patriis famae naidas
-- Deus scilicet male miliaque noctisque invenio Nilum
-- Efficerentque devexaque foret haec leve ab fertilis
-
-Institerat quantum facies parientem, crepitantis nondum. Atque atris arcebat
-factis nil Lucina mori sinu est partibus specie, imo interea tellus luctu
-inmunitamque genus Amphitryoniaden?
+Nextjs, one of the hotest web frameworks today now allows building static webpages leverging Reactjs so pages render out serverside allowing faster page loads. I thought it make a nice project to revamp my vanilla looking github pages website with a brand new with dark mode, new content and a swanky .xyz domain from the cheapest domain registrar I could find.
