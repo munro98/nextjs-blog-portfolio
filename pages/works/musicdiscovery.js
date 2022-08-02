@@ -22,16 +22,10 @@ export default function musicdiscovery() {
         <Link href="/works">Back</Link>
         <Section>
           <Heading as="h3" variant="section-title">
-          Music Discovery
+            Music Discovery
           </Heading>
 
           <List ml={4} my={4}>
-            <ListItem>
-              Website: &nbsp;{" "}
-              <Link href="http://music-discovery.nigelmunro.xyz/">
-                music-discovery.nigelmunro.xyz
-              </Link>
-            </ListItem>
             <ListItem>
               Code: &nbsp;{" "}
               <Link href="https://github.com/munro98/music-discovery">
@@ -39,7 +33,10 @@ export default function musicdiscovery() {
               </Link>
             </ListItem>
             <ListItem>
-              Built with: &nbsp; <span>NodeJS, Expressjs, Reactjs, MongdoDB, Bootstrap, JavaScript</span>
+              Built with: &nbsp;{" "}
+              <span>
+                NodeJS, Expressjs, Reactjs, MongdoDB, Bootstrap, JavaScript
+              </span>
             </ListItem>
             <ListItem>
               Services: &nbsp; <span>AWS, Mongdb Atlas</span>
@@ -49,7 +46,8 @@ export default function musicdiscovery() {
             </ListItem>
           </List>
           <Paragraph>
-            A Full-stack Web App for finding new music based on your familiar artists
+            A Full-stack Web App for finding new music based on your familiar
+            artists
           </Paragraph>
         </Section>
 

@@ -8,6 +8,7 @@ import {
   Heading,
   Image,
   useColorModeValue,
+  SimpleGrid,
 } from "@chakra-ui/react";
 
 import { sortByDate } from "../utils";
@@ -18,8 +19,10 @@ import Footer from "@components/Footer";
 import Post from "../components/Post";
 import Section from "../components/Section";
 import Paragraph from "../components/Paragraph";
+import { GridItem } from "../components/GridItem";
 
 export default function Home({ posts }) {
+  const logoImg = `/images/drone-logo${useColorModeValue("", "-dark")}.png`;
   return (
     <Container>
       <Box
@@ -32,53 +35,127 @@ export default function Home({ posts }) {
       >
         I&apos;m a full stack developer
       </Box>
-
-      <Box display={{ md: "flex" }}></Box>
-      <Box flexGrow={1}>
-        <Heading as="h2" variant="page-title">
-          Nigel Munro
-        </Heading>
-        <p> ( Coder / 3D Artist / FPV Pilot ) </p>
+      <Box display={{ md: "flex" }}>
+        <Box flexGrow={1}>
+          <Heading as="h2" variant="page-title">
+            Nigel Munro
+          </Heading>
+          <p> ( Coder / 3D Artist / FPV Pilot ) </p>
+        </Box>
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
-          align="center"
+          textAlign="center"
+          justifyContent="right"
         >
           <Image
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
+            align="right"
             maxWidth="100"
             display="inline-block"
             borderTopLeftRadius="10"
             borderTopRightRadius="10"
             borderBottomRightRadius="10"
             borderBottomLeftRadius="10"
-            src="/images/favicon.png"
-            alt="profile picture"
+            src={logoImg}
+            alt="monochrome drone picture"
           />
         </Box>
+      </Box>
+
+      <Box>
         <Section>
           <Paragraph>
-          Nigel grew up facinated with computers and video games and taught 
-            himself Java so he could create his own. 
-            He has a wide range of experience from C++ programming with OpenGL to 
-            Mobile app development using Flutter and Full Stack Web Development with 
+            Nigel grew up facinated with computers and video games and taught
+            himself Java so he could create his own. He has a wide range of
+            experience from C++ programming with OpenGL to Mobile app
+            development using Flutter and Full Stack Web Development with
             Nodejs, Expressjs and React.
           </Paragraph>
           <Paragraph>
-          In his own time he enjoys 3D modeling, 3D printing and flying Quadcopters
+            In his own time he enjoys 3D modeling, 3D printing and flying
+            Quadcopters
           </Paragraph>
         </Section>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            Works
           </Heading>
-          <Paragraph>
-            This is some paragraph text
-            <NextLink href="/works/coolproject"> Cool Project</NextLink>
-          </Paragraph>
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <Section>
+              <GridItem
+                id="music-discovery"
+                title="Music Discovery"
+                thumbnail="/images/music-discovery.jpg"
+                href="/works/musicdiscovery"
+                objectFit="scale-down"
+              >
+                Full-stack Web App for finding new music based on your familiar
+                artists
+                <br></br>
+                <a href="https://github.com/munro98/music-discovery">
+                  {" "}
+                  <span style={{ textDecoration: "underline" }}>Code</span>
+                </a>{" "}
+              </GridItem>
+            </Section>
+            <Section>
+              <GridItem
+                id="thaicountrycafe"
+                title="Thai Country Cafe"
+                thumbnail="/images/thai-country-cafe-screenshot.jpg"
+                objectFit="cover"
+                objectPosition="top"
+                href="/works/thaicountrycafe"
+              >
+                Created a Website for a restaurant located in Tawa, Wellington,
+                NZ
+                <a href="http://www.thaicountrycafe.co.nz/">
+                  {" "}
+                  <span style={{ textDecoration: "underline" }}>
+                    thaicountrycafe.co.nz
+                  </span>{" "}
+                </a>
+              </GridItem>
+            </Section>
+            <Section>
+              <GridItem
+                id="whale-music"
+                title="Whale Music"
+                thumbnail="/images/whale-music.jpg"
+                objectFit="scale-down"
+                href="/works/whalemusic"
+              >
+                Multi-platform music streaming App built with Flutter App
+                Framework
+                <br></br>
+                <a href="https://github.com/munro98/flutter_music_streaming">
+                  {" "}
+                  <span style={{ textDecoration: "underline" }}>Code</span>
+                </a>
+              </GridItem>
+            </Section>
+            <Section>
+              <GridItem
+                id="materialbakery"
+                title="Material Bakery"
+                thumbnail="https://raw.githubusercontent.com/munro98/MaterialBakery/master/example1.jpg"
+                objectFit="scale-down"
+                href="/works/materialbakery"
+              >
+                Extension for the Blender 3D modeling software for baking
+                material node shader graphs
+                <br></br>
+                <a href="https://github.com/munro98/MaterialBakery">
+                  {" "}
+                  <span style={{ textDecoration: "underline" }}>Code</span>
+                </a>
+              </GridItem>
+            </Section>
+          </SimpleGrid>
         </Section>
       </Box>
     </Container>

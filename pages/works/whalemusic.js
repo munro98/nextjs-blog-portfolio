@@ -22,7 +22,7 @@ export default function whalemusic() {
         <Link href="/works">Back</Link>
         <Section>
           <Heading as="h3" variant="section-title">
-          Whale Music
+            Whale Music
           </Heading>
 
           <List ml={4} my={4}>
@@ -33,26 +33,41 @@ export default function whalemusic() {
               </Link>
             </ListItem>
             <ListItem>
-              Built with: &nbsp; <span>Flutter, Dart 2, NodeJS, Expressjs, MongdoDB, Docker, JavaScript</span>
+              Built with: &nbsp;{" "}
+              <span>
+                Flutter, Dart 2, NodeJS, Expressjs, MongdoDB, Docker, JavaScript
+              </span>
             </ListItem>
           </List>
           <Paragraph>
-          A Multi-platform music streaming App built with Flutter App Framework
+            A Multi-platform music streaming App built with Flutter App
+            Framework
           </Paragraph>
 
           <Paragraph>
-          The goal of the project was to create a music streaming app for my FLAC library that would 
-          work on all platforms Android, IOS, PC, macOS and Linux.
-          I got sick of songs disappearing from my library on streaming platforms and I wanted a music 
-          player with a dense and compact user interface.
+            The goal of the project was to create a music streaming app for my
+            FLAC library that would work on all platforms Android, IOS, PC,
+            macOS and Linux. I got sick of songs disappearing from my library on
+            streaming platforms and I wanted a music player with a dense and
+            compact user interface.
           </Paragraph>
           <Paragraph>
-          The Flutter app connects to a NodeJS server with a MongoDB database and downloads the 
-          music library data to a local SQLite database. Various dependencies are used depending 
-          on the current platform used to play the audio files VLC_Flutter for windows 
-          and audio_players for Android/Mac.
-          </Paragraph>          
+            The Flutter app connects to a NodeJS server with a MongoDB database
+            and downloads the music library data to a local SQLite database.
+            Various dependencies are used depending on the current platform used
+            to play the audio files VLC_Flutter for windows and audio_players
+            for Android/Mac.
+          </Paragraph>
         </Section>
+        <Box align="center">
+          <Image
+            w="full"
+            width="300px"
+            src="/images/whale-music.jpg"
+            alt="screenshot of the app"
+            mb={4}
+          />
+        </Box>
       </Box>
     </Container>
   );

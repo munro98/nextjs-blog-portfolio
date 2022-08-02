@@ -43,12 +43,6 @@ export default function Home({ posts }) {
                 {" "}
                 <span style={{ textDecoration: "underline" }}>Code</span>
               </a>{" "}
-              |{" "}
-              <a href="http://music-discovery.nigelmunro.xyz/">
-                {" "}
-                <span style={{ textDecoration: "underline" }}>Demo</span>
-              </a>{" "}
-              &nbsp;{" "}
             </GridItem>
           </Section>
           <Section>
@@ -73,10 +67,12 @@ export default function Home({ posts }) {
             <GridItem
               id="whale-music"
               title="Whale Music"
-              thumbnail={{}}
+              thumbnail="/images/whale-music.jpg"
+              objectFit="scale-down"
               href="/works/whalemusic"
             >
-              Multi-platform music streaming App built with Flutter App Framework
+              Multi-platform music streaming App built with Flutter App
+              Framework
               <br></br>
               <a href="https://github.com/munro98/flutter_music_streaming">
                 {" "}

@@ -37,11 +37,10 @@ export default function thaicountrycafe() {
             </ListItem>
           </List>
           <Paragraph>
-            I overhauled the website for the restaurant I worked at
-            since the old website looked like it came from the year 1999.
-
-            I used Jekyll to create the site since I was familiar with it at the time.
-            I utilized Jekyll&apos;s data loading feature so menu prices could be loaded 
+            I overhauled the website for the restaurant I worked at since the
+            old website looked like it came from the year 1999. I used Jekyll to
+            create the site since I was familiar with it at the time. I utilized
+            Jekyll&apos;s data loading feature so menu prices could be loaded
             from CSV files for easy updates in the future.
           </Paragraph>
         </Section>

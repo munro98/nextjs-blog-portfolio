@@ -53,7 +53,8 @@ export default function Home({ posts }) {
             Welington.
           </Paragraph>
           <Paragraph>
-            My hobbies include building Quadcopters, 3D Printing, 3D modeling, Electronics and soldering
+            My hobbies include building Quadcopters, 3D Printing, 3D modeling,
+            Electronics and soldering
           </Paragraph>
         </Section>
       </Box>
