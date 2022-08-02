@@ -32,10 +32,11 @@ export default function Home({ posts }) {
             <GridItem
               id="music-discovery"
               title="Music Discovery"
-              thumbnail={{}}
-              href=""
+              thumbnail="/images/music-discovery.jpg"
+              href="/works/musicdiscovery"
+              objectFit="scale-down"
             >
-              Full-stack web application for finding new music based on familiar
+              Full-stack Web App for finding new music based on your familiar
               artists
               <br></br>
               <a href="https://github.com/munro98/music-discovery">
@@ -52,14 +53,14 @@ export default function Home({ posts }) {
           </Section>
           <Section>
             <GridItem
-              id="thai-country-cafe"
+              id="thaicountrycafe"
               title="Thai Country Cafe"
               thumbnail="/images/thai-country-cafe-screenshot.jpg"
               objectFit="cover"
               objectPosition="top"
-              href=""
+              href="/works/thaicountrycafe"
             >
-              Created a Website for a restaurant located in Tawa, Wellington
+              Created a Website for a restaurant located in Tawa, Wellington, NZ
               <a href="http://www.thaicountrycafe.co.nz/">
                 {" "}
                 <span style={{ textDecoration: "underline" }}>
@@ -73,9 +74,9 @@ export default function Home({ posts }) {
               id="whale-music"
               title="Whale Music"
               thumbnail={{}}
-              href=""
+              href="/works/whalemusic"
             >
-              Multi-platform music streaming built with Flutter app framework
+              Multi-platform music streaming App built with Flutter App Framework
               <br></br>
               <a href="https://github.com/munro98/flutter_music_streaming">
                 {" "}

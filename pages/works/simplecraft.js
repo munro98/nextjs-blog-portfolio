@@ -10,8 +10,6 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import { sortByDate } from "../../utils";
-
 import Section from "../../components/Section";
 import Paragraph from "../../components/Paragraph";
 

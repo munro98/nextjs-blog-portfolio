@@ -61,10 +61,14 @@ export default function Home({ posts }) {
         </Box>
         <Section>
           <Paragraph>
-            Nigel grew up facinated with computers an loved playing video games.
-            In high school he taught himself Java so he could code his own games
-            and this interest lead him to enrol at Victoria University of
-            Welington.
+          Nigel grew up facinated with computers and video games and taught 
+            himself Java so he could create his own. 
+            He has a wide range of experience from C++ programming with OpenGL to 
+            Mobile app development using Flutter and Full Stack Web Development with 
+            Nodejs, Expressjs and React.
+          </Paragraph>
+          <Paragraph>
+          In his own time he enjoys 3D modeling, 3D printing and flying Quadcopters
           </Paragraph>
         </Section>
         <Section delay={0.1}>

@@ -1,5 +1,15 @@
 import Link from "next/link";
-import Image from "next/image";
+
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue,
+  List,
+  ListItem,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
 //<Image layout='fill' src={post.frontmatter.cover_image} alt='' />
 
@@ -8,7 +18,7 @@ export default function Post({ post }) {
     <div className="card">
       <div className="post-date">Posted on {post.frontmatter.date}</div>
 
-      <h3>{post.frontmatter.title}</h3>
+      <Heading as="h3">{post.frontmatter.title}</Heading>
 
       <p>{post.frontmatter.excerpt}</p>
 
