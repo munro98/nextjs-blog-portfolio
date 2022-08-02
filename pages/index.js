@@ -9,7 +9,10 @@ import {
   Image,
   useColorModeValue,
   SimpleGrid,
+  Button,
 } from "@chakra-ui/react";
+
+import { IoArrowForward } from "react-icons/io5";
 
 import { sortByDate } from "../utils";
 
@@ -156,6 +159,14 @@ export default function Home({ posts }) {
               </GridItem>
             </Section>
           </SimpleGrid>
+          <Box align="center" my={4}>
+          <NextLink href="/works" passHref scroll={false}>
+            <Button rightIcon={<IoArrowForward />} colorScheme="teal">
+              See More
+            </Button>
+          </NextLink>
+        </Box>
+
         </Section>
       </Box>
     </Container>
