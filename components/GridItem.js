@@ -24,7 +24,7 @@ export const GridItem = ({
   <Box
     w="100%"
     textAlign="center"
-    bg={useColorModeValue("#ffffff", "#06060680")}
+    bg={useColorModeValue("gray.200", "#06060680")}
     borderTopLeftRadius="6"
     borderTopRightRadius="6"
     borderBottomRightRadius="6"

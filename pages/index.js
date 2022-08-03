@@ -26,6 +26,9 @@ import { GridItem } from "../components/GridItem";
 
 export default function Home({ posts }) {
   const logoImg = `/images/drone-logo${useColorModeValue("", "-dark")}.png`;
+  const buttonColor = useColorModeValue("#3182ce", "#FBD38D");
+  const buttonTextColor = "gray200";//useColorModeValue("gray200", "whiteAlpha.900");
+  const buttonScheme = useColorModeValue("blue", "orange");
   return (
     <Container>
       <Box
@@ -36,7 +39,7 @@ export default function Home({ posts }) {
         mb={6}
         align="center"
       >
-        I&apos;m a full stack developer
+        I&apos;m a full stack developer!
       </Box>
       <Box display={{ md: "flex" }}>
         <Box flexGrow={1}>
@@ -161,8 +164,8 @@ export default function Home({ posts }) {
           </SimpleGrid>
           <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<IoArrowForward />} colorScheme="teal">
-              See More
+            <Button rightIcon={<IoArrowForward />} colorScheme={buttonScheme}>
+            See More
             </Button>
           </NextLink>
         </Box>

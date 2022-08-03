@@ -60,15 +60,16 @@ export default function materialbakery() {
             material node shader graphs.
           </Paragraph>
           <Paragraph>
-            3D software is often very complicated and limits what artists are
-            able to achieve a given amount of time, Blender 3D has a very
-            healthy addon ecosystem to improve the productivity of artists.
+            3D software is often very complicated and artists getted bogged down by unintuitive 
+            user interfaces that constrain artists capabilities. 
+            To aid this many 3D softwares like Blender 3D have a very healthy addon ecosystem 
+            to improve artist productivity.
           </Paragraph>
           <Paragraph>
             This addon lets artist define their own materials through the
             visually oriented node graph system and then later flatten them down
-            for exporting into other 3D applications, game engines or for
-            performance reasons.
+            for exporting into other 3D applications, game engines 
+            to speedup thier workflow.
           </Paragraph>
         </Section>
         <Image

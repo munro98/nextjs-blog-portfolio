@@ -64,7 +64,6 @@ const Navbar = (props) => {
             <Logo />
           </Heading>
         </Flex>
-        <Box flex={1} align="right"></Box>
 
         <Box flex={1} align="right">
           <Box ml={2} display={{ base: "inline-block" }}>
