@@ -47,7 +47,15 @@ export default function musicdiscovery() {
           </List>
           <Paragraph>
             A Full-stack Web App for finding new music based on your familiar
-            artists
+            artists.
+
+            The app lets you search for an artist in the top search box which auto-fills your text.
+            Once you pick an artist the app will query the LastFM API to retrieve that artist&apos;s top songs 
+            that you can click on to play. If you are logged in you can Heart the song and add it to your profile.
+
+            I got the app working on an AWS EC2 instance but it ended up costing too much in AWS fees so I 
+            decided to deploy to Heroku instead.
+
           </Paragraph>
         </Section>
 
